@@ -15,9 +15,7 @@ const Navigation = ({ currentPage, onPageChange }: NavigationProps) => {
             <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
               <Icon name="Coins" size={20} className="text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">
-              CS2 Steam Store
-            </span>
+            <span className="text-xl font-bold text-gray-900">ONsteam</span>
           </div>
 
           <div className="flex space-x-4">

@@ -23,11 +23,11 @@ const HomePage = ({ onGetStarted }: HomePageProps) => {
           </div>
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Покупка валюты Steam для CS2
+          ONsteam - Покупка валюты Steam для CS2
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Быстро и безопасно пополните ваш Steam кошелек для покупки скинов и
-          предметов в Counter-Strike 2
+          предметов в Counter-Strike 2 через ONsteam
         </p>
         <Button
           onClick={onGetStarted}
