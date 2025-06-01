@@ -62,7 +62,7 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
           <div className="w-16 h-16 bg-orange-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
             <Icon name="UserPlus" size={32} className="text-white" />
           </div>
-          <CardTitle className="text-2xl">Регистрация Steam данных</CardTitle>
+          <CardTitle className="text-2xl">Регистрация</CardTitle>
           <CardDescription>Введите ваши данные Steam</CardDescription>
         </CardHeader>
 
