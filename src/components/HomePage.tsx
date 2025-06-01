@@ -91,9 +91,7 @@ const HomePage = ({ onGetStarted }: HomePageProps) => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Регистрация
             </h3>
-            <p className="text-gray-600">
-              Мгновенное пополнение Steam кошелька в течение 15 минут
-            </p>
+            <p className="text-gray-600">Бытрая ркгстрация на сайте </p>
           </div>
 
           <div className="text-center">
