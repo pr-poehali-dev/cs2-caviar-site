@@ -91,9 +91,7 @@ const HomePage = ({ onGetStarted }: HomePageProps) => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Регистрация
             </h3>
-            <p className="text-gray-600">
-              Введите ваши данные Steam и ссылку для трейда
-            </p>
+            <p className="text-gray-600">Введите ваши данные Steam</p>
           </div>
 
           <div className="text-center">
