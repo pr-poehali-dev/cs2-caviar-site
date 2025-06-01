@@ -51,19 +51,25 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="mb-6">
-        <Button variant="ghost" onClick={onBack} className="mb-4">
+        <Button
+          variant="ghost"
+          onClick={onBack}
+          className="mb-4 text-slate-300 hover:text-white hover:bg-blue-500/10"
+        >
           <Icon name="ArrowLeft" size={16} className="mr-2" />
           Назад
         </Button>
       </div>
 
-      <Card className="shadow-lg">
+      <Card className="steam-card shadow-lg shadow-blue-500/10">
         <CardHeader className="text-center">
-          <div className="w-16 h-16 bg-orange-500 rounded-xl mx-auto mb-4 flex items-center justify-center">
+          <div className="w-16 h-16 steam-gradient rounded-xl mx-auto mb-4 flex items-center justify-center shadow-lg shadow-blue-500/25">
             <Icon name="UserPlus" size={32} className="text-white" />
           </div>
-          <CardTitle className="text-2xl">Регистрация</CardTitle>
-          <CardDescription>Введите ваши данные Steam</CardDescription>
+          <CardTitle className="text-2xl text-white">Регистрация</CardTitle>
+          <CardDescription className="text-slate-300">
+            Введите ваши данные Steam
+          </CardDescription>
         </CardHeader>
 
         <CardContent>
@@ -77,11 +83,12 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
                 name="steamLogin"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Steam логин *</FormLabel>
+                    <FormLabel className="text-white">Steam логин *</FormLabel>
                     <FormControl>
                       <Input
                         type="text"
                         placeholder="Ваш логин Steam"
+                        className="bg-slate-800/50 border-blue-500/30 text-white placeholder:text-slate-400 focus:border-blue-400"
                         {...field}
                       />
                     </FormControl>
@@ -95,11 +102,12 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
                 name="steamPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Steam пароль *</FormLabel>
+                    <FormLabel className="text-white">Steam пароль *</FormLabel>
                     <FormControl>
                       <Input
                         type="password"
                         placeholder="Ваш пароль Steam"
+                        className="bg-slate-800/50 border-blue-500/30 text-white placeholder:text-slate-400 focus:border-blue-400"
                         {...field}
                       />
                     </FormControl>
@@ -113,11 +121,12 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email *</FormLabel>
+                    <FormLabel className="text-white">Email *</FormLabel>
                     <FormControl>
                       <Input
                         type="email"
                         placeholder="your.email@example.com"
+                        className="bg-slate-800/50 border-blue-500/30 text-white placeholder:text-slate-400 focus:border-blue-400"
                         {...field}
                       />
                     </FormControl>
@@ -131,11 +140,14 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
                 name="emailPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Пароль от email *</FormLabel>
+                    <FormLabel className="text-white">
+                      Пароль от email *
+                    </FormLabel>
                     <FormControl>
                       <Input
                         type="password"
                         placeholder="Пароль от вашего email"
+                        className="bg-slate-800/50 border-blue-500/30 text-white placeholder:text-slate-400 focus:border-blue-400"
                         {...field}
                       />
                     </FormControl>
@@ -145,7 +157,11 @@ const SteamDataForm = ({ onSubmit, onBack }: SteamDataFormProps) => {
               />
 
               <div className="pt-6">
-                <Button type="submit" className="w-full" size="lg">
+                <Button
+                  type="submit"
+                  className="w-full steam-gradient hover:shadow-lg hover:shadow-blue-500/25 text-white transition-all duration-300"
+                  size="lg"
+                >
                   Зарегистрировать данные
                 </Button>
               </div>
